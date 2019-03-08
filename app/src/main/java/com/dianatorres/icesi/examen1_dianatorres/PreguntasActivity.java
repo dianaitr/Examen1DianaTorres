@@ -34,6 +34,8 @@ public class PreguntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas);
 
+        respuesta=(EditText) findViewById(R.id.respuesta);
+
         Random rand = new Random();
          n1 = rand.nextInt(100);
         op1=(TextView) findViewById(R.id.op1);
