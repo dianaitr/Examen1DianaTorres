@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +30,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
     private double myNum;
 
+    private double respuestaCorrecta;
+
     private int n1;
     private int n2;
 
@@ -38,6 +42,8 @@ public class PreguntasActivity extends AppCompatActivity {
     private Button btn_canje;
 
     private String dificultadPreguntas;
+
+    private RadioGroup rdg_preguntas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +62,8 @@ public class PreguntasActivity extends AppCompatActivity {
 
         generarPregunta();
 
+
+
         btn_validar=(Button) findViewById(R.id.btn_validar);
         btn_validar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +71,25 @@ public class PreguntasActivity extends AppCompatActivity {
                 myNum = Integer.parseInt(respuesta.getText().toString());
 //                Log.e("preguntaaaaaa", n1+""+operadores.get(randomGenerator)+""+n2);
 //                Log.e("numeroooooooo",myNum+"" );
+
+
+//                rdg_preguntas= (RadioGroup) findViewById(R.id.rdg);
+//                rdg_preguntas.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//                    @Override
+//                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                        if (checkedId == R.id.rd_opcion1) {
+//
+//                        } else if (checkedId == R.id.rd_opcion2) {
+//
+//                        } else if (checkedId == R.id.rd_opcion3) {
+//
+//                        } else if (checkedId == R.id.rd_opcion4) {
+//
+//
+//                        }
+//                    }
+//                });
+
                 if(func.getText().toString().equals("+")){
                     if(myNum==(n1+n2)){
                        validadoSumarPuntos();
@@ -90,7 +117,7 @@ public class PreguntasActivity extends AppCompatActivity {
                     }
                 }
                 else if(func.getText().toString().equals("/")){
-                    if(myNum==(n1/n2)){
+                    if(((int)myNum)==(n1/n2)){
                         validadoSumarPuntos();
                     }else{
                         Toast toast1 = Toast.makeText(getApplicationContext(),"Fallaste!", Toast.LENGTH_LONG);
@@ -152,6 +179,34 @@ public class PreguntasActivity extends AppCompatActivity {
                 func.setText(operadores.get(randomGenerator)+"");
 
             }
+
+//            RadioButton r1= (RadioButton) findViewById(R.id.rd_opcion1);
+//            RadioButton r2= (RadioButton) findViewById(R.id.rd_opcion2);
+//            RadioButton r3= (RadioButton) findViewById(R.id.rd_opcion3);
+//            RadioButton r4= (RadioButton) findViewById(R.id.rd_opcion4);
+//
+//            if(func.getText().toString().equals("+")){
+//
+//                respuestaCorrecta=n1+n2;
+//                r1.setText(respuestaCorrecta);
+//
+//
+//            }
+//            else if(func.getText().toString().equals("-")){
+//
+//                respuestaCorrecta=n1-n2;
+//            }
+//            else if(func.getText().toString().equals("X")){
+//
+//                respuestaCorrecta=n1*n2;
+//            }
+//            else if(func.getText().toString().equals("/")){
+//
+//                respuestaCorrecta=(int) n1/n2;
+//            }
+
+
+
         }
 
     }

@@ -97,7 +97,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng bi5 = new LatLng(3.341946, -76.530092);
 
 
-        mMap.addPolyline(new PolylineOptions().add(bi1, bi2, bi3, bi4, bi5));
+        mMap.addPolyline(new PolylineOptions().add(bi1, bi2, bi3, bi4, bi5).width(2));
 
 
 
@@ -109,7 +109,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sa4 = new LatLng(3.341081, -76.530433);
         LatLng sa5 = new LatLng(3.341258, -76.530422);
 
-        mMap.addPolyline(new PolylineOptions().add(sa1, sa2, sa3, sa4, sa5));
+        mMap.addPolyline(new PolylineOptions().add(sa1, sa2, sa3, sa4, sa5).width(2));
 
 
         //Edificio D
@@ -121,7 +121,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ed1));
 
-        mMap.addPolyline(new PolylineOptions().add(ed1, ed2, ed3, ed4, ed5));
+        mMap.addPolyline(new PolylineOptions().add(ed1, ed2, ed3, ed4, ed5).width(2));
 
 
 

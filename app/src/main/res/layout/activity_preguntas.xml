@@ -72,6 +72,33 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"/>
 
+    <!--<RadioGroup-->
+        <!--android:id="@+id/rdg_preguntas"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="rd_opcion1"-->
+            <!--android:id="@+id/rd_opcion1"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="rd_opcion2"-->
+            <!--android:id="@+id/rd_opcion2"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="rd_opcion3"-->
+            <!--android:id="@+id/rd_opcion3"/>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="rd_opcion4"-->
+            <!--android:id="@+id/rd_opcion4"/>-->
+    <!--</RadioGroup>-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -97,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="100dp"
             android:text="Canje"
             android:textSize="20dp"
             android:background="#ADD8E6"/>

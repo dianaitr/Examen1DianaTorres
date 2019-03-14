@@ -90,7 +90,6 @@ public class CanjeActivity extends AppCompatActivity {
         });
 
 
-
     }
 
     public void generarCodigo(){
