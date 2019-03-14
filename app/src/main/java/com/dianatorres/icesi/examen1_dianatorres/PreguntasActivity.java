@@ -63,14 +63,12 @@ public class PreguntasActivity extends AppCompatActivity {
         generarPregunta();
 
 
-
         btn_validar=(Button) findViewById(R.id.btn_validar);
         btn_validar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 myNum = Integer.parseInt(respuesta.getText().toString());
-//                Log.e("preguntaaaaaa", n1+""+operadores.get(randomGenerator)+""+n2);
-//                Log.e("numeroooooooo",myNum+"" );
+
 
 
 //                rdg_preguntas= (RadioGroup) findViewById(R.id.rdg);
