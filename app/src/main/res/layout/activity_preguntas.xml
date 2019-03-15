@@ -70,7 +70,8 @@
         android:textSize="40dp"
         android:background="#ADD8E6"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:inputType="number"/>
 
     <!--<RadioGroup-->
         <!--android:id="@+id/rdg_preguntas"-->
